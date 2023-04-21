@@ -1,0 +1,84 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="Bootstrap 4.1.3\bootstrap.min.css">
+      <script src="jquery.min.js"></script>
+      <script src="Bootstrap 4.1.3\bootstrap.min.css"></script>
+
+        <style>
+            .logo{
+                position:absolute;
+                left:40%;
+            }
+    
+            .background{
+                background-image: url("1.jpg") ;
+                background-repeat: no-repeat;
+                background-size:100%;
+            }
+
+            .navbar{
+              width:100%;
+              background-color: rgba(0,0,0,.2);
+                  
+            }
+            /* .navbar ul{
+              text-align: center;
+            } */
+            .navbar ul li{
+              list-style: none;
+              display: inline-block;
+            }
+            .navbar ul li a{
+              display: block;
+              text-decoration: none;
+              text-transform: uppercase;
+              color:#fff;
+              font-size: 20px;
+              letter-spacing: 2px;
+              font-weight: 600;
+              padding: 20px;
+              transition: all ease 0.5s;
+            }
+            .navbar ul li a:hover{
+              background-color: #211b4385;
+            }
+            h.relative{
+                position: relative;
+                left:280px;
+            }
+            h.slogan{
+              position: relative;
+              left:610px;
+            }
+            .if1{
+              position: absolute;
+              left: 25%;
+            }
+            iframe{
+              background-color: rgba(0,0,0,.2);
+            }
+        </style>
+    </head>
+
+    <body class="background">
+
+      <div class="header">
+        <div width="100%">
+            <h>&emsp;&emsp;</h>
+            <img src="logo.png" height="110" width="240">
+            <h class="relative" style="font-size:xx-large;bottom: 30px; color:goldenrod" > AK INTERNATIONAL BANK</h><br>
+        </div><br>
+  
+      <div class="navbar">
+        <ul style="text-align:center">
+          <li><a href='Home.html'>HOME </a></li>
+          <li><a href='money_transfer.html' target="display">Money Transfer</a></li>
+          <li><a href='reset_password.php' target="display">Reset Password</a></li>
+          <li><a href='Logout.php'>LOGOUT</a></li>
+        </ul>
+      </div>
+      <br>
+      <iframe src="Balance.php" width="50%" height="60%" name="display" class="if1"></iframe>
+    </body>
+</html>

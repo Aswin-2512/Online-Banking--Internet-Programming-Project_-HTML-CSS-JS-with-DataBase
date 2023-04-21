@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script  src="Data.js"></script>
+
+        
+        <style>
+            .next{
+                font-size:30px;
+                position:absolute;
+                left:30%;
+            }
+            
+        </style>
+        
+    </head>
+
+    <body>
+        <form style="color:yellow; font-size: 30px;" id="user_form" method="post" >
+            <h><u>User Details</u></h>
+            <br><br>
+            Account Number<input type="text" name="acc_no" id="acc_no" style="margin-left:90px" pattern="[0-9]{12}" required title="Must contain only numbers between 0 to 9 and should be length of 12 characters">
+            <br><br>
+            Mobile Number<select name="ph_code" id="ph_code" style="margin-left:98px">
+                <option value="+91">+91</option>
+                <option value="+1">+1</option>
+                <option value="+61">+61</option>
+            </select><input type="text" name="ph_no" id="ph_no" style="margin-left:10px" required pattern="[0-9]{10}" title="Your phone number must be 10 digit long">
+            <br><br>
+            User Id<input type="text" name="user_id" id="user_id" style="margin-left:200px" required pattern="[A-Za-z0-9]*">
+            <br><br>
+            
+            <button class="next" onclick="user_details()" >Next</button>
+            
+        </form>
+        
+    </body>
+</html>

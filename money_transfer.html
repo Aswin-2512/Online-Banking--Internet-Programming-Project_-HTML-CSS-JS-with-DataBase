@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            div.box{
+                position:absolute;
+                left:140px;
+                border-radius:25px;
+                bottom: 190px;
+                font-size: x-large;
+                color: yellow ;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="money_transfer.php">
+            <div class="box" style="width:500px">
+                Account Number: <input type="text" name="destination" id="destination" required style="margin-left: 60px;" title="Enter the account number you want to send money">
+                <br><br>
+                Amount: <input type="text" name="amt" id="amt" required style="margin-left: 145px;" title="Enter the amount you want to transfer">
+                <br><br>
+                Transaction Password:<input type="text" id="t_pwd" name="t_pwd" required style="margin-left: 20px;" title="Enter your transaction password">
+                <br><br>
+                <button style="margin-left: 25%;">Submit</button>
+            </div>
+            
+        </form>
+    </body>
+</html>

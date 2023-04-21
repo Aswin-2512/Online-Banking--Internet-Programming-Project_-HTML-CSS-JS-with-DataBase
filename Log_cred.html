@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script  src="Data.js"></script>
+
+        <style>
+             div.box{
+                position:absolute;
+                left:150px;
+                border-radius:25px;
+                bottom: 190px;
+                                                                                                                                                           
+            }
+
+            .login{
+                width:50%;
+                position:absolute;
+                left:150px;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <div class="login" style="opacity: 0.8;font-size: 25px;">
+            <p style="text-align: center;color:red">LOGIN</p> 
+        </div>
+        <p></p>
+        <p></p>
+        <div class="box" id="cred" style="border:3px solid yellow;width:400px">
+            <br>
+            <form style="margin-left:50px;color:yellow;"id="credi" target="_parent" method="post">
+
+                <strong>USER ID:</strong><input type="text" id="userid" name="userid" required style="margin-left:50px"><br><br>
+                <strong>PASSWORD:</strong><input type="password" id="pwd" name="pwd" required style="margin-left:25px"><br><br>
+                <P></P>
+                <P></P>
+                <button type="submit" onclick="log_in()">Log In</button>
+                <button onclick="new_user()" formnovalidate>New User</button>
+                <a href="forgot_pwd.html" style="color:blue">Forgot password?</a>
+            </form>
+        </div>      
+    </body>
+</html>
